@@ -1,6 +1,4 @@
---Games
---| Bridge Worm |
---Game Store Tycoon
+
 
 
 if game.PlaceId == 5346891762 then
@@ -8,12 +6,7 @@ if game.PlaceId == 5346891762 then
  local Window = OrionLib:MakeWindow({Name = "Hix Hub | | Bridge Worm | ", HidePremium = false, Intro = false,IntroText = "Hix Hub", SaveConfig = true, ConfigFolder = "Hix Hub"})
 
 
-OrionLib:MakeNotification({
-	Name = "Script work in game Game story bridge worm",
-	Content = "ok",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+
 
 
 
@@ -41,12 +34,6 @@ elseif game.PlaceId == 10963175 then
 
 
 
-OrionLib:MakeNotification({
-	Name = "Script work in game Game story bridge worm",
-	Content = "ok",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 	 local TycoonTab = Window:MakeTab({
 		Name = "Cash$",
