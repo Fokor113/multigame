@@ -1,0 +1,71 @@
+--Games
+--| Bridge Worm |
+--Game Store Tycoon
+
+
+if game.PlaceId == 5346891762 then
+ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+ local Window = OrionLib:MakeWindow({Name = "Hix Hub | | Bridge Worm | ", HidePremium = false, Intro = false,IntroText = "Hix Hub", SaveConfig = true, ConfigFolder = "Hix Hub"})
+
+ local AdminTab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+AdminTab:AddButton({
+	Name = "Get Admin",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/1shwuXHv'),true))()
+  	end    
+})
+
+
+
+elseif game.PlaceId == 10963175 then
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	 local Window = OrionLib:MakeWindow({Name = "Hix Hub | Game Store Tycoon 🎮	 ", HidePremium = false, Intro = false,IntroText = "Hix Hub", SaveConfig = true, ConfigFolder = "Hix Hub"})
+
+
+	 local TycoonTab = Window:MakeTab({
+		Name = "Cash$",
+		Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+	})
+
+	TycoonTab:AddButton({
+		Name = "10k$+",
+		Callback = function()
+			local money = 10000
+			local children = workspace.Tycoons:GetChildren()
+			for i, child in ipairs(children) do
+			   if child.Info.Owner.Value == game.Players.LocalPlayer.Name then
+				   child.Control.Money:FireServer(money)
+			   end
+			end
+		  end    
+	})
+
+	TycoonTab:AddButton({
+		Name = "100k$+",
+		Callback = function()
+			local money = 100000
+			local children = workspace.Tycoons:GetChildren()
+			for i, child in ipairs(children) do
+			   if child.Info.Owner.Value == game.Players.LocalPlayer.Name then
+				   child.Control.Money:FireServer(money)
+			   end
+			end
+		  end    
+	})
+
+
+
+
+
+
+
+ 
+
+end
+ OrionLib:Init()
